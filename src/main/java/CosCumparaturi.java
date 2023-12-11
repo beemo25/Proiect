@@ -206,8 +206,12 @@ ArrayList<Dulciuri> dulciuriList=new ArrayList<>();
             System.out.println("10. Oferte Carne");
             System.out.println("11. Oferte Suc");
             System.out.println("12. Oferte Bere");
-            System.out.println("13. Afiseaza cosul de cumparaturi");
-            System.out.println("14. Finalizeaza cumparaturile");
+            System.out.println("13. Oferte Dulciuri");
+            System.out.println("14. Oferte Patiserie");
+            System.out.println("15. Oferte Legume");
+            System.out.println("16. Oferte Fructe");
+            System.out.println("17. Afiseaza cosul de cumparaturi");
+            System.out.println("18. Finalizeaza cumparaturile");
            
 
             int alege = scanner.nextInt();
@@ -780,7 +784,7 @@ ArrayList<Dulciuri> dulciuriList=new ArrayList<>();
            System.out.println(" ");
             }
               }  
-                case 14:
+                case 16:
                     for (Fructe fructe : fructeList) {
             if (fructe.vitamine.equals("A") && fructe.tipFruct.equals("Cultura locala")) {
                  if (!afisatMesaj) {
