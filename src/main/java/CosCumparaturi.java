@@ -151,6 +151,25 @@ public class CosCumparaturi {
         carneList.add(carne6);
         carneList.add(carne7);
 
+        ArrayList<Legume> legumeList = new ArrayList<>();
+        legumeList.add(legume1);
+        legumeList.add(legume2);
+        legumeList.add(legume3);
+        legumeList.add(legume4);
+        legumeList.add(legume5);
+        legumeList.add(legume6);
+        legumeList.add(legume7);
+
+       ArrayList<Fructe> fructeList = new ArrayList<>();
+        fructeList.add(fructe1);
+        fructeList.add(fructe2);
+        fructeList.add(frcute3);
+        fructeList.add(fructe4);
+        frcuteList.add(fructe5);
+        fructeList.add(fructe6);
+        fructeList.add(fructe7);
+    
+
 
     
         
