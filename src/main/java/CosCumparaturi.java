@@ -170,7 +170,24 @@ public class CosCumparaturi {
         fructeList.add(fructe7);
     
 
+ArrayList<Dulciuri> dulciuriList=new ArrayList<>();
+        dulciuriList.add(dulciuri1);
+        dulciuriList.add(dulciuri2);
+        dulciuriList.add(dulciuri3);
+        dulciuriList.add(dulciuri4);
+        dulciuriList.add(dulciuri5);
+        dulciuriList.add(dulciuri6);
+        dulciuriList.add(dulciuri7);
 
+
+     ArrayList<Patiserie> patiserieList=new ArrayList<>();
+       patiserieList.add(patiserie1);
+       patiserieList.add(patiserie2);
+       patiserieList.add(patiserie3);
+       patiserieList.add(patiserie4);
+       patiserieList.add(patiserie5);
+       patiserieList.add(patiserie6);
+       patiserieList.add(patiserie7);
     
         
 
@@ -720,11 +737,36 @@ public class CosCumparaturi {
          break;
                     
                 }
-                case 14: {
+                    case 13:{
+                  for (Dulciuri dulciuri : dulciuriList){
+                      if(dulciuri.calorii<500 && dulciuri.pret<6.50){
+                          if(!afisatMesaj){
+                              System.out.println("Dulciurile care au mai putin de 500 kcal si pretul mai mic de 6.50 sunt :\n");
+                                 afisatMesaj = true;  
+                          }
+                          
+                            System.out.println(dulciuri);  
+           System.out.println(" ");
+           System.out.println(" ");
+                      }
+                }
+                }
+                case 14:{
+                    for (Patiserie patiserie : patiserieList){
+                    if(patiserie.ingrediente.equals("zahar")&& patiserie.cantitate >30){
+                     if (!afisatMesaj) {
+            System.out.println("Produsele de patiserie care contin zahar si care au cantintatea mai mare de 30 g sunt: \n");
+            afisatMesaj = true; 
+                }
+                }
+                }
+                    break;
+                }
+                case 15: {
                     cos.afiseazaCos();
                     break;
                 }
-                case 15:{
+                case 16:{
 
                     cos.finalizeazaCumparaturi();
                     continuaCumparaturile = false;
