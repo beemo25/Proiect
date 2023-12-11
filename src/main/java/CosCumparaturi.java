@@ -760,6 +760,9 @@ ArrayList<Dulciuri> dulciuriList=new ArrayList<>();
             System.out.println("Produsele de patiserie care contin zahar si care au cantintatea mai mare de 30 g sunt: \n");
             afisatMesaj = true; 
                 }
+                        System.out.println(patiserie);  
+           System.out.println(" ");
+           System.out.println(" ");
                 }
                 }
                     break;
