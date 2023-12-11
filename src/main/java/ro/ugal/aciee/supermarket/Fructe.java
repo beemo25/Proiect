@@ -4,8 +4,8 @@ package ro.ugal.aciee.supermarket;
 public class Fructe extends Produs {
     String taraDeOrigine;
     boolean areSamburi;
-    String tipFruct;
-    String vitamine;
+    public String tipFruct;
+    public String vitamine;
     String gustSpecific;
 
     public Fructe() {
