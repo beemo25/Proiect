@@ -163,9 +163,9 @@ public class CosCumparaturi {
        ArrayList<Fructe> fructeList = new ArrayList<>();
         fructeList.add(fructe1);
         fructeList.add(fructe2);
-        fructeList.add(frcute3);
+        fructeList.add(fructe3);
         fructeList.add(fructe4);
-        frcuteList.add(fructe5);
+        fructeList.add(fructe5);
         fructeList.add(fructe6);
         fructeList.add(fructe7);
     
@@ -767,11 +767,37 @@ ArrayList<Dulciuri> dulciuriList=new ArrayList<>();
                 }
                     break;
                 }
-                case 15: {
+                case 15: 
+                    for (Legume legume : legumeList) {
+            if (legume.pret < 10 && legume.culoare.equals("rosie") {
+                 if (!afisatMesaj) {
+            System.out.println("Legumele care costa mai putin de 10 lei kilogramul si au culoarea rosie t: \n");
+            afisatMesaj = true;  
+            }
+
+           System.out.println(legume);  
+           System.out.println(" ");
+           System.out.println(" ");
+            }
+              }  
+                case 14:
+                    for (Fructe fructe : fructeList) {
+            if (fructe.vitamine.equals("A") && fructe.tipFruct.equals("Cultura locala")) {
+                 if (!afisatMesaj) {
+            System.out.println("Fructele care au vitamine A si sunt de cultura locala:\n");
+            afisatMesaj = true;  
+            }
+
+           System.out.println(fructe);  
+           System.out.println(" ");
+           System.out.println(" ");
+            }
+              }
+                case 17: {
                     cos.afiseazaCos();
                     break;
                 }
-                case 16:{
+                case 18:{
 
                     cos.finalizeazaCumparaturi();
                     continuaCumparaturile = false;
