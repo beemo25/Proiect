@@ -786,11 +786,11 @@ ArrayList<Dulciuri> dulciuriList=new ArrayList<>();
               }  
                  break;
                          
-                case 16:
+                 case 16:
                     for (Fructe fructe : fructeList) {
-            if (fructe.vitamine.equals("A") && fructe.tipFruct.equals("Cultura locala")) {
+            if (fructe.taraDeOrigine.equals("Romania") && fructe.gustSpecific.equals("Dulce")) {
                  if (!afisatMesaj) {
-            System.out.println("Fructele care au vitamine A si sunt de cultura locala:\n");
+            System.out.println("Fructele care sunt din Romania si sunt dulci:\n");
             afisatMesaj = true;  
             }
 
