@@ -683,8 +683,8 @@ public class CosCumparaturi {
                 case 11:{
            Sucuri[] sucuri={sucuri1,sucuri2,sucuri3};
         for(int i=0;i<3;i++){
-            if(sucuri[i].calorii >200 && sucuri[i].pret>6 ){
-                System.out.println("Produsul de pe pozitia " + (i+1)+'\n'+ sucuri[i]+'\n' );
+            if(sucuri[i].calorii>200 && sucuri[i].pret>6 ){
+                System.out.println("Sucurile cu mai mult de 200 calorii si mai scumpe de 6 lei sun " + (i+1)+'\n'+ sucuri[i]+'\n' );
             }
                 
         }
@@ -694,8 +694,8 @@ public class CosCumparaturi {
                 case 12:{
                      Bere[] bere={bere1,bere2,bere3,bere4,bere5};
         for(int i=0;i<5;i++){
-            if(bere[i].getCalorii()>300 || bere[i].getPret()<8){
-                System.out.println("Produsul de pe pozitia " + (i+1)+'\n'+ bere[i]+'\n' );
+            if(bere[i].calorii<300 || bere[i].pret<8){
+                System.out.println("Berile cu mai putin de 300 calorii sunt si mai ieftine decat 5" + (i+1)+'\n'+ bere[i]+'\n' );
             }
         }
          break;
@@ -715,5 +715,8 @@ public class CosCumparaturi {
                     System.out.println("Optiune invalida.");
             }
         }
+    }
+}
+
     }
 }
