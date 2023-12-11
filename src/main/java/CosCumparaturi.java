@@ -701,9 +701,10 @@ ArrayList<Dulciuri> dulciuriList=new ArrayList<>();
            System.out.println(" ");
             }
               }
+                  break;
                 case 10:
                     for (Carne carne : carneList) {
-            if (carne.animal.equals(carne.animal) && carne.cantitate >= 600) {
+            if (carne.animal.equals("Pui") && carne.cantitate >= 600) {
                  if (!afisatMesaj) {
             System.out.println("Carnea de pui cu gramaj mai mare de 600 de grame este : \n");
             afisatMesaj = true;  
@@ -714,6 +715,7 @@ ArrayList<Dulciuri> dulciuriList=new ArrayList<>();
            System.out.println(" ");
             }
               }
+                  break;
                     
                 
                 case 11:{
