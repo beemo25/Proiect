@@ -2,7 +2,7 @@ package ro.ugal.aciee.supermarket;
 
 public class Legume extends Produs {
     String taraDeOrigine;
-    String culoare;
+    public String culoare;
     String tipLeguma;
     boolean esteEcologic;
     String vitamine;
