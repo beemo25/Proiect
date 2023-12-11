@@ -15,7 +15,7 @@ import ro.ugal.aciee.supermarket.Sucuri;
 public class CosCumparaturi {
    
       
-    private ArrayList<Object> produse; //pentru a stoca produsele in cos
+    private final ArrayList<Object> produse; //pentru a stoca produsele in cos
     private double total; //totalul de plata
 
         
@@ -759,9 +759,9 @@ ArrayList<Dulciuri> dulciuriList=new ArrayList<>();
                 }
                 case 14:{
                     for (Patiserie patiserie : patiserieList){
-                    if(patiserie.ingrediente.equals("zahar")&& patiserie.cantitate >30){
+                    if(patiserie.pret >3 && patiserie.cantitate >30){
                      if (!afisatMesaj) {
-            System.out.println("Produsele de patiserie care contin zahar si care au cantintatea mai mare de 30 g sunt: \n");
+            System.out.println("Produsele de patiserie care au pretul mai mare de 3 lei si care au cantintatea mai mare de 30 g sunt: \n");
             afisatMesaj = true; 
                 }
                         System.out.println(patiserie);  
@@ -773,7 +773,7 @@ ArrayList<Dulciuri> dulciuriList=new ArrayList<>();
                 }
                 case 15: 
                     for (Legume legume : legumeList) {
-            if (legume.pret < 10 && legume.culoare.equals("rosie") {
+            if (legume.culoare.equals("rosie") && legume.pret < 10) {
                  if (!afisatMesaj) {
             System.out.println("Legumele care costa mai putin de 10 lei kilogramul si au culoarea rosie t: \n");
             afisatMesaj = true;  
@@ -784,6 +784,8 @@ ArrayList<Dulciuri> dulciuriList=new ArrayList<>();
            System.out.println(" ");
             }
               }  
+                 break;
+                         
                 case 16:
                     for (Fructe fructe : fructeList) {
             if (fructe.vitamine.equals("A") && fructe.tipFruct.equals("Cultura locala")) {
@@ -796,7 +798,8 @@ ArrayList<Dulciuri> dulciuriList=new ArrayList<>();
            System.out.println(" ");
            System.out.println(" ");
             }
-              }
+              } 
+                    break;
                 case 17: {
                     cos.afiseazaCos();
                     break;
@@ -814,5 +817,3 @@ ArrayList<Dulciuri> dulciuriList=new ArrayList<>();
     }
 }
 
-    }
-}
